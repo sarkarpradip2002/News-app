@@ -1,0 +1,298 @@
+import React, { Component } from 'react'
+import Newspart from './Newspart'
+
+export class Allnews extends Component {
+     articles=[
+        {
+        "source": {
+        "id": null,
+        "name": "Kotaku"
+        },
+        "author": "Luke Plunkett",
+        "title": "Tripwire CEO 'Steps Down' After Supporting Texas Anti-Abortion Law - Kotaku",
+        "description": "'The comments given by John Gibson are of his own opinion, and do not reflect those of Tripwire Interactive as a company'",
+        "url": "https://kotaku.com/tripwire-ceo-steps-down-after-supporting-texas-anti-abo-1847626560",
+        "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9d9dd778e3f445648006b0a3d220925f.jpg",
+        "publishedAt": "2021-09-07T01:20:00Z",
+        "content": "John Gibson, the CEO of Tripwire Interactivethe studio behind Maneater and Killing Floorhas stepped down following enormous public and internal backlash over his support of Texas recent decision to s… [+2801 chars]"
+        },
+        {
+        "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+        },
+        "author": "Louis Casiano",
+        "title": "New Orleans police chief says 'numerous' arrests made over weekend for looting in wake of Hurricane Ida - Fox News",
+        "description": "Police officers have made \"numerous\" arrests connected to looting in New Orleans as the city continues relief efforts in the wake of Hurricane Ida, officials said Monday.",
+        "url": "https://www.foxnews.com/us/new-orleans-police-arrests-looting-ida",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2021/08/Louisiana-ida4.jpg",
+        "publishedAt": "2021-09-07T00:57:14Z",
+        "content": "Police officers have made \"numerous\" arrests connected to looting in New Orleans as the city continues relief efforts in the wake of Hurricane Ida, officials said Monday. \r\nPolice Chief Shaun Ferguso… [+1562 chars]"
+        },
+        {
+        "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+        },
+        "author": "Tim Stelloh",
+        "title": "Judge says Ohio hospital cannot be forced to use ivermectin to treat Covid, reversing earlier decision - NBC News",
+        "description": "A judge ruled that an Ohio hospital cannot be forced to give a patient ivermectin, reversing a decision that ordered it to give a parasite medication that has not been approved to treat the disease.",
+        "url": "https://www.nbcnews.com/news/us-news/judge-says-ohio-hospital-cannot-be-forced-use-ivermectin-treat-n1278576",
+        "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2021_34/3502157/210828-ivermectin-mb-1616.JPG",
+        "publishedAt": "2021-09-07T00:11:00Z",
+        "content": "A judge ruled Monday that an Ohio hospital cannot be forced to give a patient ivermectin for Covid-19, reversing an earlier decision that ordered it to administer a parasite medication that has not b… [+3189 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NPR"
+        },
+        "author": "",
+        "title": "Planes Chartered To Evacuate Americans And Others From Afghanistan Remain Grounded - NPR",
+        "description": "Travelers have spent seven days waiting to depart from the northern city of Mazar-e-Sharif. At least 19 U.S. citizens and two green card holders are said to be among the group of about 600.",
+        "url": "https://www.npr.org/2021/09/06/1034626356/planes-chartered-to-evacuate-americans-and-others-from-afghanistan-remain-ground",
+        "urlToImage": "https://media.npr.org/assets/img/2021/09/06/gettyimages-1234963468_wide-34f705f67be8787ef4c47a82978d29404b4191cb.jpeg?s=1400",
+        "publishedAt": "2021-09-06T23:56:31Z",
+        "content": "A plane flies over temporary camp for refugees from Afghanistan at the U.S. Army's Rhine Ordnance Barracks (ROB), where they are being temporarily housed, on August 30, 2021 in Kaiserslautern, German… [+2734 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Vulture"
+        },
+        "author": "Charu Sinha",
+        "title": "Phoebe Waller-Bridge Exits Amazon’s Mr. & Mrs. Smith Reboot - Vulture",
+        "description": "Over creative differences with Donald Glover.",
+        "url": "http://www.vulture.com/2021/09/phoebe-waller-bridge-exits-mr-and-mrs-smith-reboot.html",
+        "urlToImage": "https://pyxis.nymag.com/v1/imgs/e8f/3ba/643891875cb8135ae9301ee756e3d17954-phoebe-waller-bridge.1x.rsocial.w1200.jpg",
+        "publishedAt": "2021-09-06T23:54:54Z",
+        "content": "Phoebe Waller-Bridge has left the upcoming Amazon Mr. &amp; Mrs. Smith reboot, per Deadline. Waller-Bridge was set to co-create and star in the series opposite Donald Glover, as the Mrs. Smith to his… [+484 chars]"
+        },
+        {
+        "source": {
+        "id": "google-news",
+        "name": "Google News"
+        },
+        "author": null,
+        "title": "Cardi B Gives Birth to BABY BOY With Offset - Entertainment Tonight",
+        "description": null,
+        "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9U0k0NWpFMGQzS2vSAQA?oc=5",
+        "urlToImage": null,
+        "publishedAt": "2021-09-06T23:48:11Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "9to5Mac"
+        },
+        "author": "Filipe Espósito",
+        "title": "Apple FCC filings reveal revised MagSafe Charger ahead of iPhone 13 event - 9to5Mac",
+        "description": "A new FCC filing from Apple has revealed a revised version of the MagSafe Charger ahead of the iPhone 13 event.",
+        "url": "http://9to5mac.com/2021/09/06/apple-fcc-filings-reveal-revised-magsafe-charger-ahead-of-iphone-13-event/",
+        "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/06/Apple-MagSafe-Charger-sale.jpg?resize=1200%2C628&ssl=1",
+        "publishedAt": "2021-09-06T23:43:12Z",
+        "content": "Were only a week away from Apples rumored September special event at which the company is expected to introduce the so-called iPhone 13. Now a new FCC filing from Apple has revealed a revised version… [+1637 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NASA"
+        },
+        "author": null,
+        "title": "NASA's Perseverance Rover Collects First Mars Rock Sample – NASA's Mars Exploration Program - NASA Mars Exploration",
+        "description": "The rock core is now enclosed in an airtight titanium sample tube, and will be available for retrieval in the future.",
+        "url": "https://mars.nasa.gov/news/9029/nasas-perseverance-rover-collects-first-mars-rock-sample/",
+        "urlToImage": "https://mars.nasa.gov/system/news_items/main_images/9029_PIA24806_web.jpg",
+        "publishedAt": "2021-09-06T23:28:19Z",
+        "content": "The rock core is now enclosed in an airtight titanium sample tube, and will be available for retrieval in the future.\r\nNASA’s Perseverance rover today completed the collection of the first sample of … [+5832 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Times of Israel"
+        },
+        "author": null,
+        "title": "IDF chief says Israel accelerating Iran strike plans, acting throughout Mideast - The Times of Israel",
+        "description": "Aviv Kohavi also defends top brass amid anger over border cop's death: 'If we don't back them up we'll end up without commanders'",
+        "url": "https://www.timesofisrael.com/idf-chief-says-israel-accelerating-iran-strike-plans-acting-throughout-mideast/",
+        "urlToImage": "https://static.timesofisrael.com/www/uploads/2021/09/F210714TN35-1024x640.jpg",
+        "publishedAt": "2021-09-06T23:26:15Z",
+        "content": "Israel has “greatly accelerated” preparations for action against Iran’s nuclear program, army chief Aviv Kohavi said in an interview published Monday.\r\nKohav told Walla news that “a significant chunk… [+4646 chars]"
+        },
+        {
+        "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+        },
+        "author": "Meredith Deliso",
+        "title": "Virginia to remove 12-ton Robert E. Lee statue in state capital this week - ABC News",
+        "description": "",
+        "url": "https://abcnews.go.com/US/virginia-remove-12-ton-robert-lee-statue-state/story?id=79862294",
+        "urlToImage": "https://s.abcnews.com/images/US/lee-1-ap-er-210906_1630958502303_hpMain_16x9_992.jpg",
+        "publishedAt": "2021-09-06T22:42:43Z",
+        "content": "More than a year after Virginia Gov. Ralph Northam ordered the removal of a giant statue of Confederate Gen. Robert E. Lee in the state's capital, the monument will be coming down this week, state of… [+3014 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "CBS Sports"
+        },
+        "author": "",
+        "title": "Ole Miss vs. Louisville: Spread, live stream, watch online, TV channel, prediction, pick, football game odds - CBS Sports",
+        "description": "The Rebels and Cardinals are facing off Monday night to cap college football's opening weekend",
+        "url": "https://www.cbssports.com/college-football/news/ole-miss-vs-louisville-spread-live-stream-watch-online-tv-channel-prediction-pick-football-game-odds/",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2021/08/06/3c9287e2-08c4-4d62-9525-29494d95daa6/thumbnail/1200x675/89b79e70ad62e15323d0360d92b3b99c/corral-ole-miss.jpg",
+        "publishedAt": "2021-09-06T22:36:00Z",
+        "content": "College football's Week 1 marathon winds down Monday night when Louisville and Ole Miss meet at Mercedes-Benz Stadium in Atlanta to cap off five consecutive days of football games to open the 2021 se… [+4033 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NPR"
+        },
+        "author": "",
+        "title": "Jean-Paul Belmondo, The Face Of French New Wave Film, Dies At 88 - NPR",
+        "description": "Belmondo's breakout role in Jean-Luc Godard's \"Breathless\" launched him into international superstardom and a career spanning six decades.",
+        "url": "https://www.npr.org/2021/09/06/1034636250/jean-paul-belmondo-the-face-of-french-new-wave-film-dies-at-88",
+        "urlToImage": "https://media.npr.org/assets/img/2021/09/06/gettyimages-106755373_wide-f564e1ebbe6de1dbc81b3a2d5e3926c18c2f824b.jpg?s=1400",
+        "publishedAt": "2021-09-06T21:58:43Z",
+        "content": "French actors Jean-Paul Belmondo, right, and Catherine Deneuve, in 1969. They starred together in François Truffaut's film Mississippi Mermaid. \r\nKeystone-France/Gamma-Keystone via Getty Images\r\nFren… [+3058 chars]"
+        },
+        {
+        "source": {
+        "id": "google-news",
+        "name": "Google News"
+        },
+        "author": null,
+        "title": "Who is Bryan James Riley, Marine charged in Lakeland mass shooting? - WFLA News Channel 8",
+        "description": null,
+        "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9YzgxOVJyQTJnUknSAQA?oc=5",
+        "urlToImage": null,
+        "publishedAt": "2021-09-06T21:54:13Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Tomahawk Nation"
+        },
+        "author": "evenflow58",
+        "title": "Florida State Seminoles football vs. Notre Dame: ESPN TV rating update - Tomahawk Nation",
+        "description": "Florida State Seminoles football vs. Notre Dame Fighting Irish: ESPN press release says FSU game delivers monster TV rating on opening college Labor Day weekend.",
+        "url": "https://www.tomahawknation.com/florida-state-football-fsu-seminoles/2021/9/6/22659881/notre-dame-fighting-irish-game-week-1-ratings-abc-espn-watch-live-overtime",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/v2qZaMTVd_kG0aOeVJQttb3xgAg=/0x0:2283x1195/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22830291/usa_today_16695876.jpg",
+        "publishedAt": "2021-09-06T21:45:00Z",
+        "content": "College Football is finally back, and it came in with a bang this past weekend. With fans packing Doak Campbell Stadium and no other games opposite it, the Florida State Seminoles football game vs. t… [+741 chars]"
+        },
+        {
+        "source": {
+        "id": "nfl-news",
+        "name": "NFL News"
+        },
+        "author": null,
+        "title": "Fantasy waiver wire targets for Week 1 of 2021 season - NFL.com",
+        "description": "Following a week of roster cuts and injury designations, Michael F. Florio gives you the rundown on what players to look out for on the waiver wire.",
+        "url": "https://www.nfl.com/news/fantasy-waiver-wire-targets-for-week-1-of-2021-season",
+        "urlToImage": "https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/v6adwutfmmwwfrxnjt7a",
+        "publishedAt": "2021-09-06T20:51:00Z",
+        "content": "Working the waiver wire is an important part of fantasy football, but it can often be overlooked heading into Week 1. Fantasy managers will draft their teams and then think that lineup is fine to rol… [+8868 chars]"
+        },
+        {
+        "source": {
+        "id": "reuters",
+        "name": "Reuters"
+        },
+        "author": "Reuters",
+        "title": "Factbox: Pros and cons for El Salvador, the first bitcoin nation - Reuters",
+        "description": "El Salvador will on Tuesday become the first country in the world to recognize bitcoin as legal tender, a move President Nayib Bukele says will save Salvadorans living abroad millions of dollars in commissions on money they send home.",
+        "url": "https://www.reuters.com/technology/pros-cons-el-salvador-first-bitcoin-nation-2021-09-06/",
+        "urlToImage": "https://www.reuters.com/resizer/i-rujrihQEoPn0oJnXp9pnt5twM=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/N3LQ3RRWE5PRRGKH3DX4VLW3RE.jpg",
+        "publishedAt": "2021-09-06T20:42:00Z",
+        "content": "A banner that reads \"We accept Bitcoin, free, fast and without contagion\" is seen at a beach cafe on Punta Roca Beach in La Libertad, El Salvador April 25, 2021. REUTERS/Jose CabezasSAN SALVADOR, Sep… [+3821 chars]"
+        },
+        {
+        "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+        },
+        "author": "Louis Casiano",
+        "title": "South Carolina lawyer Alex Murdaugh to resign from firm, enter rehab after wife and son shot dead - Fox News",
+        "description": "The prominent South Carolina lawyer who was shot along a country road over the weekend, months after he found his wife and son murdered outside their home, is quitting his law firm and will enter rehab, his lawyer said.",
+        "url": "https://www.foxnews.com/us/south-carolina-lawyer-shot-murdered",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2021/09/alex-murdaugh.jpg",
+        "publishedAt": "2021-09-06T20:36:43Z",
+        "content": "The prominent South Carolina lawyer who was shot along a country road over the weekend, months after he found his wife and son shot and killed outside their home, is quitting his law firm and will en… [+2908 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Times of Israel"
+        },
+        "author": null,
+        "title": "Behind prison escape, reports indicate a farcical litany of Israeli blunders - The Times of Israel",
+        "description": "Zakaria Zubeidi said allowed into cell with other 5 escapees day before jailbreak, blueprint of prison was available online, and watchtower guard slept through the whole episode",
+        "url": "https://www.timesofisrael.com/behind-prison-escape-reports-indicate-a-litany-of-blunders-and-dropped-balls/",
+        "urlToImage": "https://static.timesofisrael.com/www/uploads/2021/09/AP21249293659469-1-1024x640.jpg",
+        "publishedAt": "2021-09-06T20:33:26Z",
+        "content": "Prison building plans posted online, guards blind to digging occurring under their noses, a watchtower manned by a sleeping recruit, and a fumbled report of suspicious figures.\r\nThese were just some … [+7806 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Variety"
+        },
+        "author": "William Earl",
+        "title": "Michael K. Williams, Star of ‘The Wire’ and ‘Boardwalk Empire,’ Found Dead at 54 - Variety",
+        "description": "Popular on Variety Michael K. Williams, who memorably portrayed Omar Little in “The Wire” and Chalky White in “Boardwalk Empire,” has died at age 54. The New York Police Department confirmed to Variety that the actor was found dead today at 2 p.m. inside of h…",
+        "url": "https://variety.com/2021/tv/news/michael-k-williams-dead-the-wire-1235057436/",
+        "urlToImage": "https://variety.com/wp-content/uploads/2021/09/michael-k-williams.jpg?w=1000",
+        "publishedAt": "2021-09-06T20:32:00Z",
+        "content": "Michael K. Williams, who memorably portrayed Omar Little in “The Wire” and Chalky White in “Boardwalk Empire,” has died at age 54. The New York Police Department confirmed to Variety that the actor w… [+2994 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Texas Tribune"
+        },
+        "author": "Neelam Bohra",
+        "title": "Texas' abortion ban faces potential Justice Department challenge - The Texas Tribune",
+        "description": "Garland provided no details of how federal officials may challenge one of the nation’s strictest bans on abortion. His statement came days after the U.S. Supreme Court declined to block the law, at least for now.",
+        "url": "https://www.texastribune.org/2021/09/06/texas-abortion-ban-federal-challenge/",
+        "urlToImage": "https://thumbnails.texastribune.org/moi5J1K9_TqLKANZMHse6WkISyA=/1200x630/filters:quality(95)/static.texastribune.org/media/files/c590e92cb7b5c3c241400c5309404476/Merrick%20Garland%20REUTERS%20TT.jpeg",
+        "publishedAt": "2021-09-06T20:07:27Z",
+        "content": "Sign up for The Brief, our daily newsletter that keeps readers up to speed on the most essential Texas news.\r\nU.S. Attorney General Merrick Garland said Monday the Department of Justice is urgently e… [+3652 chars]"
+        }
+        ]
+    async componentDidMount(){
+        let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=46cdc41be0f84f81b369eaada0554af1";
+        let data=await fetch(url);
+        let parseddata=await data.json();
+        this.setState({articles: parseddata.articles});
+    }
+
+    constructor(){
+        super();
+        this.state={
+            articles: this.articles,
+            loading: false,
+        }
+    }
+
+    render() {
+     
+        return (
+            <div className="container">
+            <div className="row mt-3">
+            {this.state.articles.map((element)=>{ 
+                return <div className="col-md-4" key={element.url}>
+                <Newspart title={element.title} description={element.description} image={element.urlToImage} url={element.url} />
+                </div>})}
+             </div>
+            </div>
+       
+        )
+}
+}
+
+export default Allnews
